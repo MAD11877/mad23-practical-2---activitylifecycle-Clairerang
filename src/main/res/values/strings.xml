@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="follow_button_text">Follow</string>
+    <string name="message_button_text">Message</string>
+    <string name="text_button_text">lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</string>
+
+
+</resources>
