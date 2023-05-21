@@ -1,8 +1,11 @@
 package sg.edu.np.mad23.myapplication;
 
+import static android.provider.MediaStore.MediaColumns.TITLE;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
@@ -32,5 +35,41 @@ public class MainActivity extends AppCompatActivity {
             }
 
         });
+    }
+
+    @Override
+    protected void onStart(){
+        super.onStart();
+        Log.v(TITLE, "Start");
+    }
+
+    @Override
+    protected void onResume(){
+        super.onResume();
+        Log.v(TITLE, "Resume");
+    }
+
+    @Override
+    protected void onPause(){
+        super.onPause();
+        Log.v(TITLE, "Pause");
+    }
+
+    @Override
+    protected void onStop(){
+        super.onStop();
+        Log.v(TITLE, "Stop");
+    }
+
+    @Override
+    protected void onRestart(){
+        super.onRestart();
+        Log.v(TITLE, "Restart");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.v(TITLE, "Destroy");
     }
 }
