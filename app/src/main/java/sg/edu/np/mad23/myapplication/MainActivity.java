@@ -18,19 +18,19 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Button follow = findViewById(R.id.follow);
         User user1 = new User();
-        user1.followed = false;
+        user1.setFollowed(false);
 
         follow.setOnClickListener(new View.OnClickListener(){
             @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View view){
-                if (user1.followed == false){
+                if (!user1.isFollowed()){
                     follow.setText("unfollow");
-                    user1.followed = true;
+                    user1.setFollowed(true);
                 }
                 else {
                     follow.setText("follow");
-                    user1.followed = false;
+                    user1.setFollowed(false);
                 }
             }
 
