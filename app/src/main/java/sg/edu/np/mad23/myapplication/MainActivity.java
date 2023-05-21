@@ -71,5 +71,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onDestroy() {
         super.onDestroy();
         Log.v(TITLE, "Destroy");
+        cdsa
     }
 }
